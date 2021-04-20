@@ -1,0 +1,29 @@
+testvalues:
+  additionalPodAnnotations:
+    health.check.helios.enable: 'false'
+    health.check.helios.url: xxxx:1111
+    health.check.module: xxxx
+  clusterName: aries
+  envProperties:
+    ENVIRONMENT: staging
+    EXOTEL_SMS_CALLBACK: xxxxx
+    JMX_MAX_MEMORY: 512M
+    JMX_PROMETHEUS_JAVAAGENT_CONFIG_FIILE: xxx
+    JMX_PROMETHEUS_JAVAAGENT_METRICS_PORT: 1111
+    KINESIS_ACCESSKEY: xxx
+    KINESIS_REGION: ap-south-1
+    KINESIS_SECRETKEY: xxx
+    OMS_PROXIES: vault: xxx
+    PUBSUB_CONSUMERS: atropos
+    PUBSUB_PRODUCER: logs
+    SPARTA_HOSTS: sparta.aries.svc.cluster.local
+    TWILLIO_OUTBOUNDCALLXMLURL: xxxx
+    redisMasterName: aries_redis
+    redisSentinels: redis-cluster:26379
+  envs:
+  - name: environmentName
+    value: staging
+  - name: POSTGRES_JDBC_PASSWORD
+    value: zeta
+  - name: POSTGRES_JDBC_USERNAME
+    value: zeta
